@@ -1,0 +1,29 @@
+{
+  "name": "draw",
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "react": "^0.13.2",
+    "react-tools": "^0.13.2"
+  },
+  "browserify": {
+    "transform": [
+      ["reactify", {"harmony": true, "strip-types": true}]
+    ]
+  },
+  "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^9.0.8",
+    "flow": "^0.2.3",
+    "jshint": "latest",
+    "jsx": "^0.9.89"
+  },
+  "scripts": {
+    "clean": "rm -rf bundle.js",
+    "flow": "flow check",
+    "prebuild": "flow check",
+    "build": "browserify lib/main.js --outfile bundle.js",
+    "watch": "watchify lib/main.js --outfile bundle.js"
+  },
+  "author": "Kenny Yu"
+}
