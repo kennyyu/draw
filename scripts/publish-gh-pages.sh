@@ -25,7 +25,7 @@ npm run build
 rm .gitignore
 
 # Add our assets
-git add bundle.js
+git add build
 
 # Now publish the branch to github
 PUBLISH_TIME=`date`

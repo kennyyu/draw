@@ -17,14 +17,16 @@
     "flow": "^0.2.3",
     "jshint": "^2.7.0",
     "jsx": "^0.9.89",
-    "reactify": "^1.1.0"
+    "reactify": "^1.1.0",
+    "uglify-js": "^2.4.20"
   },
   "scripts": {
-    "clean": "rm -rf bundle.js",
+    "clean": "rm -rf build",
     "flow": "flow check",
     "prebuild": "flow check",
-    "build": "browserify lib/main.js --outfile bundle.js",
-    "watch": "watchify lib/main.js --outfile bundle.js"
+    "build": "mkdir -p build; browserify lib/main.js --outfile build/bundle.js",
+    "postbuild": "uglifyjs --compress --mangle -- build/bundle.js > build/bundle.min.js 2> build/uglifyjs.log",
+    "watch": "watchify lib/main.js --outfile build/bundle.js"
   },
   "author": "Kenny Yu"
 }
