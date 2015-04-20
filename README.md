@@ -4,7 +4,8 @@ Drawing app using HTML5 Canvases.
 
 Building
 ========
-Run `npm run build`. This will type check and compile all the javascript
+Install packages with `npm install`. Build the javascript bundle with
+`npm run build`. This will type check and compile all the javascript
 into a single file `bundle.js`.
 
 Notes
