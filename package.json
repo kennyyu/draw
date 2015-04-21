@@ -15,13 +15,14 @@
     "babelify": "^6.0.2",
     "browserify": "^9.0.8",
     "flow": "^0.2.3",
-    "jshint": "^2.7.0",
     "jsx": "^0.9.89",
+    "jsxhint": "^0.14.0",
     "reactify": "^1.1.0",
     "uglify-js": "^2.4.20"
   },
   "scripts": {
     "clean": "rm -rf build",
+    "lint": "jsxhint --harmony lib/**/*",
     "flow": "flow check",
     "prebuild": "flow check",
     "build": "mkdir -p build; browserify lib/main.js --outfile build/bundle.js",

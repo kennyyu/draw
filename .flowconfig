@@ -1,8 +1,9 @@
 [ignore]
 .*/build/.*
-.*/bundle.js
+.*/node_modules/.*
 
 [include]
+./node_modules
 
 [libs]
 ./interfaces
