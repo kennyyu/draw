@@ -1,9 +1,9 @@
 [ignore]
 .*/build/.*
-.*/node_modules/.*
+.*/node_modules/jsxhint/.*
+.*/node_modules/react-style/examples/.*
 
 [include]
-./node_modules
 
 [libs]
 ./interfaces
