@@ -7,7 +7,6 @@
     "bootstrap-slider": "^4.8.0",
     "browserify-css": "^0.5.0",
     "color-picker": "0.0.1",
-    "colr": "^1.2.1",
     "emitter": "0.0.1",
     "events": "^1.0.2",
     "flux": "^2.0.0",
