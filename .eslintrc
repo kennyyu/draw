@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": "always-multline",
+    "eqeqeq": false,
+    "no-underscore-dangle": false,
+    "no-unused-vars": false,
+    "quotes": "single",
+    "strict": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
