@@ -59,7 +59,7 @@
     "clean": "rm -rf build",
     "lint": "eslint --no-color lib",
     "flow": "flow status",
-    "prebuild": "npm run clean && npm run flow && npm run lint",
+    "prebuild": "npm run clean && npm run lint",
     "build": "mkdir -p build; browserify lib/main.js --outfile build/bundle.js",
     "postbuild": "uglifyjs --compress --mangle -- build/bundle.js > build/bundle.min.js 2> build/uglifyjs.log",
     "publish": "scripts/publish-gh-pages.sh",
