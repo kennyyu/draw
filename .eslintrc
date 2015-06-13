@@ -4,6 +4,7 @@
     "comma-dangle": "always-multline",
     "eqeqeq": false,
     "no-underscore-dangle": false,
+    "no-undef": false,
     "no-unused-vars": false,
     "quotes": "single",
     "strict": 0
